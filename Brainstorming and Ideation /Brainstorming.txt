@@ -1,1 +1,67 @@
+- Project Goal: Analyze customer food ordering behavior to help restaurants improve sales and customer satisfaction.
 
+ Questions to Explore
+-------------------------
+- Which food items are ordered the most?
+- Which days have the highest number of orders?
+- What time of day do customers order the most?
+- Which city or location generates the most orders?
+- Which payment method is used the most?
+- What is the average order value?
+- Which customers order most frequently?
+- Which restaurants receive the highest ratings?
+- Which age group orders food the most?
+- Are discounts increasing the number of orders?
+
+DATA FIELDS
+--------------
+Order ID
+Customer ID
+Customer Age
+Gender
+City
+Restaurant Name
+Food Category
+Food Item
+Order Date
+Order Time
+Order Amount
+Delivery Time
+Payment Method
+Discount
+Customer Rating
+Tableau Dashboards
+Sales Dashboard
+Total Sales
+Total Orders
+Average Order Value
+Customer Dashboard
+Top Customers
+Orders by Age Group
+Orders by Gender
+Food Analysis Dashboard
+Most Ordered Food Items
+Orders by Category
+Restaurant-wise Sales
+Time Analysis Dashboard
+Orders by Hour
+Orders by Day of Week
+Orders by Month
+
+Recommended Charts
+---------------------
+📊 Bar Chart – Top Food Items
+🥧 Pie Chart – Payment Methods
+📈 Line Chart – Monthly Sales Trend
+🗺️ Map – Orders by City
+📦 Tree Map – Sales by Food Category
+📉 Heat Map – Orders by Day and Hour
+
+Expected Insights
+----------------------
+Peak ordering time
+Best-selling food items
+Highest revenue-generating restaurants
+Customer spending patterns
+Most preferred payment method
+Effect of discounts on sales
