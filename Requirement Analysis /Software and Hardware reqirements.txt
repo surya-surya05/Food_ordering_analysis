@@ -1,0 +1,9 @@
+SOFTWARE REQUIREMENTS
+---------------------------
+Tableau public software
+
+Hardware Requirements
+-----------------------
+- i5 or same level chip 
+- 2gb free storage
+- 8gb ram 
