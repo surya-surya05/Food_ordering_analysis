@@ -1,0 +1,36 @@
+Customer journey in the app 
+--------------------------------------------------
+Customer
+    │
+    ▼
+Open App
+    │
+    ▼
+Search Restaurant
+    │
+    ▼
+View Menu
+    │
+    ▼
+Add Items to Cart
+    │
+    ▼
+Apply Coupon
+    │
+    ▼
+Make Payment
+    │
+    ▼
+Order Confirmation
+    │
+    ▼
+Food Preparation
+    │
+    ▼
+Delivery Tracking
+    │
+    ▼
+Receive Food
+    │
+    ▼
+Rate & Review
