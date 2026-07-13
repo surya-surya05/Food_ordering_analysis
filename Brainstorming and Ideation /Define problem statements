@@ -1,0 +1,11 @@
+Restaurants and online food delivery platforms generate large amounts of order data, but they often struggle to understand customer ordering behavior, popular food items, peak ordering times, and sales trends.
+This lack of insight makes it difficult to improve customer satisfaction, optimize menu offerings, and increase revenue.
+The objective of this project is to analyze food ordering data using Tableau to identify customer preferences, ordering patterns, and key business trends, enabling data-driven decision-making.
+
+Objectives of the Project
+--------------------------------
+- Analyze customer ordering behavior.
+- Identify the most popular food items.
+- Find peak ordering days and times.
+- Study sales trends and customer spending.
+- Create interactive Tableau dashboards to support business decisions.
