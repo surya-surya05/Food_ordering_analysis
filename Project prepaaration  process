@@ -1,9 +1,0 @@
-DOWNLOADING DATASET
-- Successfully downloaded the dataset and stored in my local server.
-- The dataset is checked for the correct values.
-- Checked for any null values and duplicate values.
-
-DATA PREPARATION 
-- Dataset is cleaned for the next step.
-- Dataset is transformed for the dashboard preparation.
-
