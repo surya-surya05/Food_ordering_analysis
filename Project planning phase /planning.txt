@@ -1,0 +1,16 @@
+Data Collection
+----------------------
+Data is collected and downloaded from the databases.
+Then data is then stored in the localserver
+
+Data cleaning
+
+Data visualization 
+
+Dashboard
+
+Story 
+
+Testing
+
+Documentaion
