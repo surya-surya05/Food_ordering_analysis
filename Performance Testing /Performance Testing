@@ -1,1 +1,44 @@
+AMOUNT OF DATA RENDERED
+----------------------------------
+- Tested how the data flows into the dashboard.
+- Checked for the accurate data flow.
+- The project loads the food_ordering_behaviour_dataset.csv dataset through a Tableau data connection. 
+- The dataset contains 50,000 records and 19 columns, capturing detailed information about customer food ordering behaviour.
+- All records were successfully imported into Tableau without any truncation.
+- The completeness of the dataset was verified using a KPI card displaying the Count of Order ID as 50,000, confirming that the full dataset was loaded and ready for analysis.
 
+NO OF CALCULATION FIELDS
+--------------------------------------
+A key highlight of this analysis is the use of a calculated field to define Age Groups. Instead of using raw age values, customers are categorized into meaningful segments using the following logic:
+
+- Age ≤ 20 → Child
+
+- Age 21–30 → Gen Z
+
+- Age 31–40 → Millennial
+
+- Age > 40 → Adults
+
+This calculated field enables better segmentation and simplifies analysis by grouping customers into interpretable categories.
+
+Number of Visualizations / Graph
+---------------------------------------
+The analysis integrates 9 distinct visualization types:
+
+KPI — Cuisine Demand & Order Performance Metrics
+
+Heat Map — Flavors Across Cities by Cuisine Type
+
+Grouped Bar Chart — Order Distribution by Age Group and Restaurant Segment
+
+Bar Chart — Analysis of Orders Across Company Type and Meal Type
+
+Donut Chart — Customer Rating Analysis by Meal Type
+
+Bar Chart — Revenue Contribution by Meal Type
+
+Pie Chart — Distribution of Customer Preferences Across Cuisines
+
+Bar Chart — Cities by Order Volume
+
+Bar Chart — Distribution of Delivery Time Across Orders
