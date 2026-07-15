@@ -1,1 +1,13 @@
+| **Problem**                                             | **Data Analytics Solution (Tableau)**                                                                      | **Expected Business Impact**                           |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Customers order only during peak hours, causing delays. | Create a dashboard showing orders by hour, day, and weekday/weekend. Use heat maps and time-series charts. | Optimize staffing and reduce delivery delays.          |
+| Low customer retention.                                 | Analyze repeat customers, purchase frequency, and customer segments.                                       | Improve loyalty programs and increase repeat orders.   |
+| Some menu items sell poorly.                            | Build a product performance dashboard showing top-selling and least-selling items.                         | Remove low-performing items and promote popular ones.  |
+| Delivery times vary significantly.                      | Compare delivery time by location, restaurant, and time of day using maps and box plots.                   | Improve delivery efficiency and customer satisfaction. |
+| Discounts reduce profits without increasing sales.      | Analyze sales before and after discounts and compare profit margins.                                       | Design more effective promotional campaigns.           |
+| Customers abandon carts or place fewer orders.          | Identify trends in order frequency, basket size, and customer demographics.                                | Develop targeted marketing campaigns.                  |
+| Seasonal demand is difficult to predict.                | Use monthly and seasonal trend analysis with forecasting in Tableau.                                       | Improve inventory planning and staffing.               |
+| Different regions have different food preferences.      | Create geographic maps showing popular cuisines and order volume by location.                              | Personalize menus and marketing by region.             |
+| High order cancellations.                               | Analyze cancellation reasons by restaurant, delivery partner, payment method, and time.                    | Reduce cancellations and improve service quality.      |
+| Revenue growth is inconsistent.                         | Build KPI dashboards for revenue, average order value, customer count, and growth trends.                  | Support better business decision-making.               |
 
