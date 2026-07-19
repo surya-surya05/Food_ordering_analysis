@@ -1,0 +1,26 @@
+| Week   | Activity                                    |
+| ------ | ------------------------------------------- |
+| Week 1 | Requirement Analysis and Dataset Collection |
+| Week 2 | Data Cleaning and Dashboard Design          |
+| Week 3 | Dashboard Development in Tableau            |
+| Week 4 | Testing, Documentation, and Deployment      |
+
+
+
+Work Breakdown
+
+Food Ordering Analysis
+│
+├── Requirement Analysis
+│
+├── Data Collection
+│
+├── Data Cleaning
+│
+├── Dashboard Design
+│
+├── Tableau Dashboard Development
+│
+├── Testing
+│
+└── Documentation
