@@ -1,0 +1,1709 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='foodorderingsheets' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='food_ordering_behavior_dataset' inline='true' name='federated.1et08x51mj8pes10sswhs1nk3hdp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='food_ordering_behavior_dataset' name='textscan.08b440204d6cta1gwy2bq0cg3eet'>
+            <connection class='textscan' directory='C:/Users/jais4/OneDrive/Documents' filename='food_ordering_behavior_dataset.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.08b440204d6cta1gwy2bq0cg3eet' name='food_ordering_behavior_dataset.csv' table='[food_ordering_behavior_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='order_id' ordinal='0' />
+            <column datatype='integer' name='user_id' ordinal='1' />
+            <column datatype='integer' name='age' ordinal='2' />
+            <column datatype='string' name='city' ordinal='3' />
+            <column datatype='string' name='order_time' ordinal='4' />
+            <column datatype='string' name='day_type' ordinal='5' />
+            <column datatype='string' name='cuisine' ordinal='6' />
+            <column datatype='string' name='meal_type' ordinal='7' />
+            <column datatype='string' name='restaurant_type' ordinal='8' />
+            <column datatype='integer' name='order_value' ordinal='9' />
+            <column datatype='string' name='discount_applied' ordinal='10' />
+            <column datatype='integer' name='delivery_fee' ordinal='11' />
+            <column datatype='integer' name='time_taken_to_order' ordinal='12' />
+            <column datatype='integer' name='rating_given' ordinal='13' />
+            <column datatype='string' name='is_repeat_order' ordinal='14' />
+            <column datatype='string' name='mood' ordinal='15' />
+            <column datatype='string' name='hunger_level' ordinal='16' />
+            <column datatype='string' name='company' ordinal='17' />
+            <column datatype='string' name='rainy_weather' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_time]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>order_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_type]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>day_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cuisine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cuisine]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>cuisine</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meal_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[meal_type]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>meal_type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>restaurant_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[restaurant_type]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>restaurant_type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_value]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>order_value</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discount_applied</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[discount_applied]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>discount_applied</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_fee</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[delivery_fee]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>delivery_fee</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_taken_to_order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_taken_to_order]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>time_taken_to_order</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_given</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rating_given]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>rating_given</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeat_order</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[is_repeat_order]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>is_repeat_order</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mood]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>mood</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hunger_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hunger_level]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>hunger_level</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rainy_weather</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rainy_weather]</local-name>
+            <parent-name>[food_ordering_behavior_dataset.csv]</parent-name>
+            <remote-alias>rainy_weather</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Group' datatype='string' name='[Calculation_0180617502789632]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [age]  &lt;= 20 Then &quot;Child&quot;&#13;&#10;ELSEIF [age] &lt;= 30 Then &quot;Gen Z&quot;&#13;&#10;ELSEIF [age] &lt;=40 Then &quot;Millenial&quot;&#13;&#10;ELSEif [age] &gt; 40 Then &quot;Adults&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Cusine filter' datatype='string' name='[Calculation_0180617539559425]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [cuisine] = &quot;Biryani&quot;&#13;&#10;OR [cuisine] = &quot;Chinese&quot;&#13;&#10;OR [cuisine] = &quot;South Indian&quot;&#13;&#10;OR [cuisine] = &quot;North Indian&quot;&#13;&#10;OR [cuisine] = &quot;Fast Food&quot;&#13;&#10;OR [cuisine] = &quot;Desserts&quot;&#13;&#10;THEN &quot;True&quot;&#13;&#10;ELSE &quot;False&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Meal filter' datatype='string' name='[Calculation_0180617543528450]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [meal_type] = &quot;Breakfast&quot;&#13;&#10;OR [meal_type] = &quot;Lunch&quot;&#13;&#10;OR [meal_type] = &quot;Dinner&quot;&#13;&#10;OR [meal_type] = &quot;Snacks&quot;&#13;&#10;THEN &quot;True&quot;&#13;&#10;ELSE &quot;False&quot;&#13;&#10;END' />
+      </column>
+      <column caption='City filter' datatype='string' name='[Calculation_0180617544568835]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [city] = &quot;Pune&quot;&#13;&#10;OR [city] = &quot;Mumbai&quot;&#13;&#10;OR [city] = &quot;Delhi&quot;&#13;&#10;OR [city] = &quot;Chandigarh&quot;&#13;&#10;OR [city] = &quot;Bangalore&quot;&#13;&#10;OR [city] = &quot;Hyderabad&quot;&#13;&#10;THEN &quot;True&quot;&#13;&#10;ELSE &quot;False&quot;&#13;&#10;END' />
+      </column>
+      <column caption='food_ordering_behavior_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Cuisine' datatype='string' name='[cuisine]' role='dimension' type='nominal' />
+      <column caption='Day Type' datatype='string' name='[day_type]' role='dimension' type='nominal' />
+      <column caption='Delivery Fee' datatype='integer' name='[delivery_fee]' role='measure' type='quantitative' />
+      <column caption='Discount Applied' datatype='string' name='[discount_applied]' role='dimension' type='nominal' />
+      <column caption='Hunger Level' datatype='string' name='[hunger_level]' role='dimension' type='nominal' />
+      <column caption='Is Repeat Order' datatype='string' name='[is_repeat_order]' role='dimension' type='nominal' />
+      <column caption='Meal Type' datatype='string' name='[meal_type]' role='dimension' type='nominal' />
+      <column caption='Mood' datatype='string' name='[mood]' role='dimension' type='nominal' />
+      <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+      <column caption='Order Time' datatype='string' name='[order_time]' role='dimension' type='nominal' />
+      <column caption='Order Value' datatype='integer' name='[order_value]' role='measure' type='quantitative' />
+      <column caption='Rainy Weather' datatype='string' name='[rainy_weather]' role='dimension' type='nominal' />
+      <column caption='Rating Given' datatype='integer' name='[rating_given]' role='measure' type='quantitative' />
+      <column caption='Restaurant Type' datatype='string' name='[restaurant_type]' role='dimension' type='nominal' />
+      <column caption='Time Taken To Order' datatype='integer' name='[time_taken_to_order]' role='measure' type='quantitative' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/jais4/AppData/Local/Temp/TableauTemp/#TableauTemp_0fu34qn0fktlz50zqriuz0j1ss97.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/13/2026 11:18:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8933</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>3</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_time</remote-alias>
+              <ordinal>4</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cuisine</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cuisine]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cuisine</remote-alias>
+              <ordinal>6</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>meal_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[meal_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>meal_type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>restaurant_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[restaurant_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>restaurant_type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_value</remote-alias>
+              <ordinal>9</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2572</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>discount_applied</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[discount_applied]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>discount_applied</remote-alias>
+              <ordinal>10</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delivery_fee</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delivery_fee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivery_fee</remote-alias>
+              <ordinal>11</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_taken_to_order</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[time_taken_to_order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_taken_to_order</remote-alias>
+              <ordinal>12</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating_given</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rating_given]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating_given</remote-alias>
+              <ordinal>13</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_repeat_order</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[is_repeat_order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_repeat_order</remote-alias>
+              <ordinal>14</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mood</remote-alias>
+              <ordinal>15</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hunger_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hunger_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hunger_level</remote-alias>
+              <ordinal>16</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>17</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rainy_weather</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rainy_weather]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rainy_weather</remote-alias>
+              <ordinal>18</ordinal>
+              <family>food_ordering_behavior_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='order_id' />
+        <field-sort-custom-order field='user_id' />
+        <field-sort-custom-order field='age' />
+        <field-sort-custom-order field='Calculation_0180617502789632' />
+        <field-sort-custom-order field='city' />
+        <field-sort-custom-order field='Calculation_0180617544568835' />
+        <field-sort-custom-order field='order_time' />
+        <field-sort-custom-order field='day_type' />
+        <field-sort-custom-order field='cuisine' />
+        <field-sort-custom-order field='Calculation_0180617539559425' />
+        <field-sort-custom-order field='meal_type' />
+        <field-sort-custom-order field='Calculation_0180617543528450' />
+        <field-sort-custom-order field='restaurant_type' />
+        <field-sort-custom-order field='order_value' />
+        <field-sort-custom-order field='discount_applied' />
+        <field-sort-custom-order field='delivery_fee' />
+        <field-sort-custom-order field='time_taken_to_order' />
+        <field-sort-custom-order field='rating_given' />
+        <field-sort-custom-order field='is_repeat_order' />
+        <field-sort-custom-order field='mood' />
+        <field-sort-custom-order field='hunger_level' />
+        <field-sort-custom-order field='company' />
+        <field-sort-custom-order field='rainy_weather' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='food_ordering_behavior_dataset.csv' id='food_ordering_behavior_dataset.csv_7B05541A24844C47BE929BAB453266E4'>
+            <properties context=''>
+              <relation connection='textscan.08b440204d6cta1gwy2bq0cg3eet' name='food_ordering_behavior_dataset.csv' table='[food_ordering_behavior_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='order_id' ordinal='0' />
+                  <column datatype='integer' name='user_id' ordinal='1' />
+                  <column datatype='integer' name='age' ordinal='2' />
+                  <column datatype='string' name='city' ordinal='3' />
+                  <column datatype='string' name='order_time' ordinal='4' />
+                  <column datatype='string' name='day_type' ordinal='5' />
+                  <column datatype='string' name='cuisine' ordinal='6' />
+                  <column datatype='string' name='meal_type' ordinal='7' />
+                  <column datatype='string' name='restaurant_type' ordinal='8' />
+                  <column datatype='integer' name='order_value' ordinal='9' />
+                  <column datatype='string' name='discount_applied' ordinal='10' />
+                  <column datatype='integer' name='delivery_fee' ordinal='11' />
+                  <column datatype='integer' name='time_taken_to_order' ordinal='12' />
+                  <column datatype='integer' name='rating_given' ordinal='13' />
+                  <column datatype='string' name='is_repeat_order' ordinal='14' />
+                  <column datatype='string' name='mood' ordinal='15' />
+                  <column datatype='string' name='hunger_level' ordinal='16' />
+                  <column datatype='string' name='company' ordinal='17' />
+                  <column datatype='string' name='rainy_weather' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='16'>City vs Cusine</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_ordering_behavior_dataset' name='federated.1et08x51mj8pes10sswhs1nk3hdp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et08x51mj8pes10sswhs1nk3hdp'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[order_id]' derivation='Count' name='[cnt:order_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Cuisine' datatype='string' name='[cuisine]' role='dimension' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cuisine]' derivation='None' name='[none:cuisine:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column caption='Order Value' datatype='integer' name='[order_value]' role='measure' type='quantitative' />
+            <column-instance column='[order_value]' derivation='Sum' name='[sum:order_value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]' value='160' />
+            <format attr='height' field='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:city:nk]' value='112' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#eff3e3' />
+            <format attr='border-color' value='#1b1b1b' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]' />
+              <text column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[sum:order_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:city:nk]</rows>
+        <cols>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]</cols>
+      </table>
+      <simple-id uuid='{592919ED-933D-496D-A75C-334A4F4425C7}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='16'>Order by Age group &amp; Restaurant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_ordering_behavior_dataset' name='federated.1et08x51mj8pes10sswhs1nk3hdp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et08x51mj8pes10sswhs1nk3hdp'>
+            <column caption='Age Group' datatype='string' name='[Calculation_0180617502789632]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [age]  &lt;= 20 Then &quot;Child&quot;&#13;&#10;ELSEIF [age] &lt;= 30 Then &quot;Gen Z&quot;&#13;&#10;ELSEIF [age] &lt;=40 Then &quot;Millenial&quot;&#13;&#10;ELSEif [age] &gt; 40 Then &quot;Adults&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[order_id]' derivation='Count' name='[cnt:order_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0180617502789632]' derivation='None' name='[none:Calculation_0180617502789632:nk]' pivot='key' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[restaurant_type]' derivation='None' name='[none:restaurant_type:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column caption='Order Value' datatype='integer' name='[order_value]' role='measure' type='quantitative' />
+            <column caption='Restaurant Type' datatype='string' name='[restaurant_type]' role='dimension' type='nominal' />
+            <column-instance column='[order_value]' derivation='Sum' name='[sum:order_value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:city:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:city:nk]' member='&quot;Bangalore&quot;' />
+              <groupfilter function='member' level='[none:city:nk]' member='&quot;Chandigarh&quot;' />
+              <groupfilter function='member' level='[none:city:nk]' member='&quot;Delhi&quot;' />
+              <groupfilter function='member' level='[none:city:nk]' member='&quot;Hyderabad&quot;' />
+              <groupfilter function='member' level='[none:city:nk]' member='&quot;Mumbai&quot;' />
+              <groupfilter function='member' level='[none:city:nk]' member='&quot;Pune&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617502789632:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:city:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]' scope='rows' value='Order Count' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#faf4e7' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:restaurant_type:nk]' />
+              <text column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[sum:order_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]</rows>
+        <cols>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617502789632:nk]</cols>
+      </table>
+      <simple-id uuid='{025CE067-971C-40D0-ADE0-671692BC731F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Cusine Preference</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_ordering_behavior_dataset' name='federated.1et08x51mj8pes10sswhs1nk3hdp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et08x51mj8pes10sswhs1nk3hdp'>
+            <column caption='Cuisine' datatype='string' name='[cuisine]' role='dimension' type='nominal' />
+            <column-instance column='[cuisine]' derivation='None' name='[none:cuisine:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column-instance column='[order_id]' derivation='Count' name='[pcto:cnt:order_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1et08x51mj8pes10sswhs1nk3hdp].[pcto:cnt:order_id:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#faf4e7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-color' value='#ac3607' />
+            <format attr='background-color' value='#00ffff' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]' />
+              <wedge-size column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[pcto:cnt:order_id:qk]' />
+              <text column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]' />
+              <text column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[pcto:cnt:order_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{96B520E8-6329-4791-9169-210739117BBD}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='16'>Order vs Companny</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_ordering_behavior_dataset' name='federated.1et08x51mj8pes10sswhs1nk3hdp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et08x51mj8pes10sswhs1nk3hdp'>
+            <column caption='Cusine filter' datatype='string' name='[Calculation_0180617539559425]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [cuisine] = &quot;Biryani&quot;&#13;&#10;OR [cuisine] = &quot;Chinese&quot;&#13;&#10;OR [cuisine] = &quot;South Indian&quot;&#13;&#10;OR [cuisine] = &quot;North Indian&quot;&#13;&#10;OR [cuisine] = &quot;Fast Food&quot;&#13;&#10;OR [cuisine] = &quot;Desserts&quot;&#13;&#10;THEN &quot;True&quot;&#13;&#10;ELSE &quot;False&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Meal filter' datatype='string' name='[Calculation_0180617543528450]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [meal_type] = &quot;Breakfast&quot;&#13;&#10;OR [meal_type] = &quot;Lunch&quot;&#13;&#10;OR [meal_type] = &quot;Dinner&quot;&#13;&#10;OR [meal_type] = &quot;Snacks&quot;&#13;&#10;THEN &quot;True&quot;&#13;&#10;ELSE &quot;False&quot;&#13;&#10;END' />
+            </column>
+            <column caption='City filter' datatype='string' name='[Calculation_0180617544568835]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [city] = &quot;Pune&quot;&#13;&#10;OR [city] = &quot;Mumbai&quot;&#13;&#10;OR [city] = &quot;Delhi&quot;&#13;&#10;OR [city] = &quot;Chandigarh&quot;&#13;&#10;OR [city] = &quot;Bangalore&quot;&#13;&#10;OR [city] = &quot;Hyderabad&quot;&#13;&#10;THEN &quot;True&quot;&#13;&#10;ELSE &quot;False&quot;&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[order_id]' derivation='Count' name='[cnt:order_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Cuisine' datatype='string' name='[cuisine]' role='dimension' type='nominal' />
+            <column caption='Meal Type' datatype='string' name='[meal_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0180617539559425]' derivation='None' name='[none:Calculation_0180617539559425:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0180617543528450]' derivation='None' name='[none:Calculation_0180617543528450:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0180617544568835]' derivation='None' name='[none:Calculation_0180617544568835:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617539559425:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0180617539559425:nk]' member='&quot;True&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617543528450:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0180617543528450:nk]' member='&quot;True&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617544568835:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0180617544568835:nk]' member='&quot;True&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617539559425:nk]</column>
+            <column>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617543528450:nk]</column>
+            <column>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617544568835:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]</rows>
+        <cols>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:company:nk]</cols>
+      </table>
+      <simple-id uuid='{7CA4E060-24C7-4E59-8584-3383965F0FAC}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='16'>Meal type vs Customer rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_ordering_behavior_dataset' name='federated.1et08x51mj8pes10sswhs1nk3hdp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1et08x51mj8pes10sswhs1nk3hdp'>
+            <column caption='Meal Type' datatype='string' name='[meal_type]' role='dimension' type='nominal' />
+            <column-instance column='[meal_type]' derivation='None' name='[none:meal_type:nk]' pivot='key' type='nominal' />
+            <column caption='Rating Given' datatype='integer' name='[rating_given]' role='measure' type='quantitative' />
+            <column-instance column='[rating_given]' derivation='Sum' name='[sum:rating_given:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#faf4e7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.ladataviz.extension.donut' extension-url='https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/donut.html' extension-version='1.0.0' instance-id='20018BF0A2DF4596A73C5ED21E55F868'>
+              <instance-settings />
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{FF8DD98D-8453-4E8E-AC1E-05C19F0EBB0A}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:meal_type:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{FF8DD98D-8453-4E8E-AC1E-05C19F0EBB0A}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:meal_type:nk]' custom-type-name='sections' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{C50BEE4E-7F61-4760-AA89-64FDB0D0AA5A}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[sum:rating_given:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{C50BEE4E-7F61-4760-AA89-64FDB0D0AA5A}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[sum:rating_given:qk]' custom-type-name='values' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{FE76433E-CC78-4F2D-8AFE-11BC936DA910}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:meal_type:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{FE76433E-CC78-4F2D-8AFE-11BC936DA910}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:meal_type:nk]' custom-type-name='color' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{09601BA5-572A-484C-85D8-88890D47DD10}' column='[federated.1et08x51mj8pes10sswhs1nk3hdp].[sum:rating_given:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{503FD872-25E2-47AA-9057-B81D5CE28B86}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='122'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[cnt:order_id:qk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:city:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{49EDE072-ED4F-4266-A42D-B2B33B2704C6}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:restaurant_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617502789632:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:city:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:order_id:ok]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:restaurant_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{32663898-D7D7-4AAB-89AF-83E074BD1150}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:cuisine:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:order_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3F2A3A6B-E42B-4207-AD71-521EC90D4321}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='100'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617539559425:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617543528450:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:Calculation_0180617544568835:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:company:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:meal_type:nk]</field>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:order_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2B835600-D583-4F22-87EA-785EF76354A5}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1et08x51mj8pes10sswhs1nk3hdp].[none:meal_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{31196C69-F30F-47CC-9515-273FF43EA05B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      ihpuAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAATOElEQVR4nO3daWwc533H8e8zs/fB5XJJiqQoUhJJnbZu23FsOHDqJE7SHE6ANkGRIECA
+      FmhfFm1f9HWDAM2LoGnT9kXQJi1Qtw0auLmaxInt+JAPybplmtRBije5vPeY3Z2Zpy8o6zBp
+      nkvuMvP/vBG0HM4+Iz2/eY55ZkZprTVCeJQPoJSbAMmB8CAfcLvyu5UtiRAVYFS6AEJUkgRA
+      eJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHia
+      BEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRA
+      eJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHiaBEB4mgRAeJoEQHia
+      BMDDBm72cundviV/ViyWAJhIp+98Njs1g/O+7SbSaWamJyk5epNKubl8lS6AqBSby92DfPix
+      U6RHbnHl2jCHD3eijRiFmXHOnD3Pqcce4+3XX6K2uYMnHjlGz7ludh1uoefGCLva92JNDXPh
+      +hBPnDqEz+fnzJVudnd0MdD7Dk4wwaMnD1f6IFckLYBn+Xj4eBcvvvgml/rGePxkFxevXGJ0
+      yuLm9WHa2ttpbUqxs30v4YC681uZyUkOnnyEqeHLzJZidLU3Mzbcz/T0HMFwmOt9PfgCdQRV
+      sYLHtnrSAnhWies3BonXJehoquGN89fZ13WA3u53CERj1EQVN4fGqU+lcFkIQH1LA5GEn5AB
+      9Tt2Mzo4wpz209HShHKKWEWH+lQDYSMMKlLh41sdpbXWpew44Fa6LEIsSWsNaMAF7YIuobVN
+      phBEGSZBv4GhFIZSKAVKqZV2eYe0AKKqaO2iixO4xREcawi3MIwuTaLtOVxnFpw8C2GAv/zl
+      F0jn4igF0aCPRDRAbSxAfU2Q1voobQ1RdqYiNNaGMIylQyEBEHc4xTy/fPE0v/fRJ+nvvcxE
+      VvGhk4fBLfHG6beoa92Lyk3QP57lyL5WegamONLRiB2uJxX1r+s7tXbRpTR25gpOrgcn24O2
+      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
+      dSk7DpSnSRHbmNYUSjbBgJ+ZqUkc5SPsN5jPl2hMJZhIz1DfkKJUKhIMBHBKBcbTszQ2NTCT
+      ThOM1oBtkSvYpFIpVrNcSGvNdKFI38wcN2bn6ZudZ75YWjEQD3b38sTrZ1b+AtPETCYIdO0l
+      sL+DwMEuzFQSdfuahQRAVBVXa2YLRSZyFqPZHOm8xWyhyFyhyHypRMF20MDRd6/x+Om3Fn5J
+      KVQkjJmIYyRqMOuS+Fp24G9txtzRsFDhjaXTKAEQSyoW8mAG8WHTPzjGrrZWDO0wkZ4Cw0dj
+      fZLM/CzhWIKpyUka6usolhyCm3DTjL7dGmgWAuK4GkolfLaNMk1UIABKgXH7rL6GK9IyCyQW
+      cUsFfvuL57iWLnL2zFm0MnBvX3k1DcXZcxdwill+8qNnuXL+HS739HHl3R4m5qxNKY9SCqUU
+      hlL4DIOgzyQYDmHGYxiRMMpnokzjznZrIQEQixj+IEcPdQEw3D/C5OgAt0amMUwfIWXRtKuT
+      V158mVg8jhuO4Mdh5NYAV94+R6Y80/NbRmaBxCJ2Icel7j6yiQB7u9qYs0r43ByD6RDp/imO
+      nDiC7tjBQM9Zwq27sHwlfL4kV3tHK130NZMxgFie1rgaDGOlroVG67X1v6uBtABieUqxYt1f
+      2JBtVvcBGQMIj5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhP
+      kwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MA
+      CE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhPkwAIT5MACE+TAAhP
+      kwAIT5MACE/7f19EEbbbw6bZAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      Ravsg58AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.ladataviz.extension.donut'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Donut</description>
+          <author email='tristan@ladataviz.com' name='LaDataViz' organization='LaDataViz' website='https://www.ladataviz.com' />
+          <min-api-version>1.11</min-api-version>
+          <source-location>
+            <url>https://partner-extensions.tableauusercontent.com/viz/ladataviz/all/donut.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='sections'>
+            <display-name>Sections</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='level' />
+          </encoding>
+          <encoding id='values'>
+            <display-name>Angle</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='size' />
+          </encoding>
+          <encoding id='color'>
+            <display-name>Color</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-dimension</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='color' />
+            <tooltip resource-id='tooltip-color'>Add a color to the radar</tooltip>
+          </encoding>
+          <encoding id='kpi'>
+            <display-name>KPI</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='favorite' />
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Donut</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='Sheet 5' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
